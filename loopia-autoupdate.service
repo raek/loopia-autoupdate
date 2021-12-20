@@ -1,0 +1,8 @@
+[Unit]
+Description=Loopia Autoupdate
+
+[Service]
+Type=oneshot
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=%h/.local/bin/loopia-autoupdate
+SyslogIdentifier=loopia-autoupdate
