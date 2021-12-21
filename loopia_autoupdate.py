@@ -3,6 +3,7 @@ import json
 import pathlib
 import socket
 import subprocess
+import time
 import typing
 
 import appdirs
@@ -24,6 +25,7 @@ def main():
     print("WAN")
     wan_ipv4 = find_wan_ip(ipv6=False)
     print("  IPv4:", wan_ipv4)
+    time.sleep(5)  # Some sort of rate limiting
     wan_ipv6 = find_wan_ip(ipv6=True)
     print("  IPv6:", wan_ipv6)
     print("DNS")
