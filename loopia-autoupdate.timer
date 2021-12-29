@@ -2,7 +2,7 @@
 Description=Loopia Autoupdate
 
 [Timer]
-OnCalendar=*:00/10:00
+OnCalendar=*:00/15:00
 
 [Install]
 WantedBy=timers.target
